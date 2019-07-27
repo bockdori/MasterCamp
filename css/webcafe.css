@@ -22,8 +22,37 @@ body{
 }
 
 a{
-  color: inherit
+  color: inherit;
   text-decoration: none;
+}
+
+/* 공통 스타일 */
+
+
+/* 모바일 스타일 */
+@media screen and (min-width: 320px) and (max-width: 999px){
+  /* 모바일 헤더 */
+  .header{
+    background:#38302E;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* 줄 바꿈 해주세요 */
+  }
+
+  /* 모바일 멤버링크 */
+  .logo, .member, .search-form{
+    width: 100%;
+  }
+  .member{
+    color:#988574;
+    /* order: -1; */
+  }
+}
+
+/* 데스크탑 스타일 */
+@media screen and (min-width: 1000px){
+
 }
 
 /* a:link{
