@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 @import url('./normalize.css');
-/*@import url('./reset.css');*/
+@import url('./reset.css');
 
 /* 기본 스타일
 - 글꼴(웹폰트)
@@ -43,10 +43,38 @@ a{
   /* 모바일 멤버링크 */
   .logo, .member, .search-form{
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .member{
-    color:#988574;
-    /* order: -1; */
+    background:#988574;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    order: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* 메인축 정렬 */
+  }
+
+  .member a{
+    display: inline-block;
+    /*background: blue;*/
+    width: 100px;
+    padding: 0.5em 1em;
+    margin-right: -1em;
+  }
+
+  .member a:hover, .member a:focus{
+    color: yellow;
+  }
+
+  /* 모바일 로고 */
+  .logo{
+    background: orangered;
+  }
+  .logo img{
+    background: blue;
+    vertical-align: top; /* vertical-align을 사용하면 block 속성으로 렌더링 */
   }
 }
 
